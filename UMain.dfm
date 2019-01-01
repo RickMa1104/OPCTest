@@ -1,0 +1,151 @@
+object FMain: TFMain
+  Left = 282
+  Top = 189
+  Width = 600
+  Height = 364
+  Caption = 'OPC'#23458#25143#31471#27979#35797
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -16
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 16
+  object Label1: TLabel
+    Left = 304
+    Top = 24
+    Width = 80
+    Height = 16
+    Caption = #26381#21153#22120#21517#31216
+  end
+  object Label2: TLabel
+    Left = 312
+    Top = 72
+    Width = 64
+    Height = 16
+    Caption = 'DB'#22359#21015#34920
+  end
+  object Label3: TLabel
+    Left = 48
+    Top = 184
+    Width = 48
+    Height = 16
+    Caption = 'DB'#39033#30446
+  end
+  object Label4: TLabel
+    Left = 80
+    Top = 232
+    Width = 16
+    Height = 16
+    Caption = #20540
+  end
+  object BtnServerList: TButton
+    Left = 24
+    Top = 48
+    Width = 75
+    Height = 25
+    Caption = #26381#21153#22120#21015#34920
+    TabOrder = 0
+    OnClick = BtnServerListClick
+  end
+  object BtnConnect: TButton
+    Left = 24
+    Top = 96
+    Width = 75
+    Height = 25
+    Caption = #36830#25509
+    TabOrder = 1
+    OnClick = BtnConnectClick
+  end
+  object LstServer: TListBox
+    Left = 112
+    Top = 16
+    Width = 185
+    Height = 129
+    ItemHeight = 16
+    TabOrder = 2
+    OnClick = LstServerClick
+  end
+  object EdtServer: TEdit
+    Left = 392
+    Top = 16
+    Width = 185
+    Height = 24
+    TabOrder = 3
+    Text = 'EdtServer'
+  end
+  object LstItem: TListBox
+    Left = 392
+    Top = 48
+    Width = 185
+    Height = 97
+    ItemHeight = 16
+    TabOrder = 4
+    OnClick = LstItemClick
+  end
+  object EdtItem: TEdit
+    Left = 112
+    Top = 184
+    Width = 185
+    Height = 24
+    TabOrder = 5
+    Text = 'EdtItem'
+  end
+  object EdtValue: TEdit
+    Left = 112
+    Top = 224
+    Width = 121
+    Height = 24
+    TabOrder = 6
+    Text = '0'
+  end
+  object BtnRead: TButton
+    Left = 64
+    Top = 272
+    Width = 75
+    Height = 25
+    Caption = #35835#21462
+    TabOrder = 7
+    OnClick = BtnReadClick
+  end
+  object BtnWrite: TButton
+    Left = 168
+    Top = 272
+    Width = 75
+    Height = 25
+    Caption = #20889#20837
+    TabOrder = 8
+    OnClick = BtnWriteClick
+  end
+  object StatusBar: TStatusBar
+    Left = 0
+    Top = 299
+    Width = 584
+    Height = 26
+    Panels = <>
+    SimplePanel = False
+    SimpleText = 'Select Server and Click Connect Button'
+  end
+  object MemLog: TMemo
+    Left = 304
+    Top = 160
+    Width = 265
+    Height = 137
+    Lines.Strings = (
+      'MemLog')
+    TabOrder = 10
+  end
+  object Button1: TButton
+    Left = 16
+    Top = 240
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 11
+    OnClick = Button1Click
+  end
+end
